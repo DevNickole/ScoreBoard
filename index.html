@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Board</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+
+
+
+</head>
+
+<body>
+    <HEADer>
+        <h1>SCORE BOARD</h1>
+    </HEADer>
+    <MAIN>
+        <div class="team-1-wrapper">
+            <h1>Team 1</h1>
+            <h2 id="score-team-1">00</h2>
+            <div class="points">
+                <button id="1point-team1" onclick="add1pointsTeam1()">1pts</button>
+                <button id="2point-team1" onclick="add2pointsTeam1()">2pts</button>
+                <button id="3point-team1" onclick="add3pointsTeam1()">3pts</button>
+            </div>
+        </div>
+
+        <div class="team-2-wrapper">
+            <h1>Team 2</h1>
+            <H2 id="score-team-2">00</H2>
+            <div class="points">
+                <button id="1point-team2" onclick="add1pointsTeam2()">1pts</button>
+                <button id="2point-team2" onclick="add2pointsTeam2()">2pts</button>
+                <button id="3point-team2" onclick="add3pointsTeam2()">3pts</button>
+            </div>
+        </div>
+
+        <div class="quarter-container">
+            <div class="quarter-wrapper">
+                <div class="team">
+                    <h1>Team 1 :&nbsp; </h1>
+                    <h1 id="first-quarter-t1">00</h1>
+                </div>
+                <div class="team">
+                    <h1>Team 2 :&nbsp; </h1>
+                    <h1 id="first-quarter-t2">00</h1>
+                </div>
+                <button id="q1btn" onclick="saveToFirstQuarter()">1st Quarter</button>
+            </div>
+            <div class="quarter-wrapper">
+                <div class="team">
+                    <h1>Team 1 :&nbsp; </h1>
+                    <h1 id="second-quarter-t1">00</h1>
+                </div>
+                <div class="team">
+                    <h1>Team 2 :&nbsp; </h1>
+                    <h1 id="second-quarter-t2">00</h1>
+                </div>
+                <button id="q2btn" onclick="saveToSecondQuarter()">2nd Quarter</button>
+            </div>
+            <div class="quarter-wrapper">
+                <div class="team">
+                    <h1>Team 1 :&nbsp; </h1>
+                    <h1 id="third-quarter-t1">00</h1>
+                </div>
+                <div class="team">
+                    <h1>Team 2 :&nbsp; </h1>
+                    <h1 id="third-quarter-t2">00</h1>
+                </div>
+                <button id="q3btn" onclick="saveToThirdQuarter()">3rd Quarter</button>
+            </div>
+            <div class="quarter-wrapper">
+                <div class="team">
+                    <h1>Team 1 :&nbsp; </h1>
+                    <h1 id="fourth-quarter-t1">00</h1>
+                </div>
+                <div class="team">
+                    <h1>Team 2 :&nbsp; </h1>
+                    <h1 id="fourth-quarter-t2">00</h1>
+                </div>
+                <button id="q4btn" onclick="saveToFourthQuarter()">4th Quarter</button>
+            </div>
+
+        </div>
+
+        <button id="reset" onclick="reset()">Reset</button>
+
+    </MAIN>
+</body>
+
+</html>
